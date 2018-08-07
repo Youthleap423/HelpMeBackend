@@ -1,0 +1,272 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="HelpMe.AdminMasterPage" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<html lang="en">
+<head id="Head1" runat="server">
+    <title>UHelpMe</title>
+    <link rel="shortcut icon" href="Content/images/icons/favicon.png" />
+    <link rel="apple-touch-icon" href="images/icons/favicon-2.html" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.html" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.html" />
+    <!--Loading bootstrap css-->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700" />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/font-awesome/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/bootstrap/css/bootstrap.min.css" />
+    <!--LOADING STYLESHEET FOR PAGE-->
+    <link type="text/css" rel="stylesheet" href="Content/vendors/intro.js/introjs.css" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/calendar/zabuto_calendar.min.css" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/sco.message/sco.message.css" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/intro.js/introjs.css" />
+    <!--Loading style vendors-->
+    <link type="text/css" rel="stylesheet" href="Content/vendors/animate.css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/iCheck/skins/all.css" />
+    <link type="text/css" rel="stylesheet" href="Content/vendors/jquery-notific8/jquery.notific8.min.css" />
+    <%--<link type="text/css" rel="stylesheet" href="Content/vendors/bootstrap-colorpicker/css/colorpicker.css"> --%>   
+    <link type="text/css" rel="stylesheet" href="Content/vendors/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <!--Loading style-->
+    <link type="text/css" rel="stylesheet" href="Content/css/themes/style1/orange-blue.css" class="default-style" />
+    <link type="text/css" rel="stylesheet" href="Content/css/themes/style1/orange-blue.css" id="themeChange" class="style-change color-change" />
+    <link type="text/css" rel="stylesheet" href="Content/css/style-responsive.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </cc1:ToolkitScriptManager>
+		<div>
+            <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+            <div id="header-topbar-option-demo" class="page-header-topbar">
+                <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+                    <div class="navbar-header">
+                        <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a id="logo" href="Dashboard.aspx" class="navbar-brand">
+                            <span class="fa fa-rocket"></span>
+                            <span class="logo-text">UHelpMe</span>
+                            <span style="display: none" class="logo-text-icon">O</span>
+                        </a>
+                    </div>
+                    <div class="topbar-main">
+                        <a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
+                        <ul class="nav navbar-nav    ">
+                            <li class="active"><a href="Dashboard.aspx">Dashboard</a></li>
+                        </ul>
+
+                        <ul class="nav navbar navbar-top-links navbar-right mbn">
+                            <%-- <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-bell fa-fw"></i>
+                                <span class="badge badge-green">3</span></a><ul class="dropdown-menu dropdown-alerts">
+                                    <li>
+                                        <p>You have 14 new notifications</p>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-slimscroll">
+                                            <ul>
+                                                <li><a href="extra-user-list.html" target="_blank"><span class="label label-blue"><i class="fa fa-comment"></i></span>New Comment<span class="pull-right text-muted small">4 mins ago</span></a></li>
+                                                <li><a href="extra-user-list.html" target="_blank"><span class="label label-violet"><i class="fa fa-twitter"></i></span>3 New Followers<span class="pull-right text-muted small">12 mins ago</span></a></li>
+                                                <li><a href="extra-user-list.html" target="_blank"><span class="label label-pink"><i class="fa fa-envelope"></i></span>Message Sent<span class="pull-right text-muted small">15 mins ago</span></a></li>
+                                                <li><a href="extra-user-list.html" target="_blank"><span class="label label-green"><i class="fa fa-tasks"></i></span>New Task<span class="pull-right text-muted small">18 mins ago</span></a></li>
+                                                <li><a href="extra-user-list.html" target="_blank"><span class="label label-yellow"><i class="fa fa-upload"></i></span>Server Rebooted<span class="pull-right text-muted small">19 mins ago</span></a></li>
+                                                <li><a href="extra-user-list.html" target="_blank"><span class="label label-green"><i class="fa fa-tasks"></i></span>New Task<span class="pull-right text-muted small">2 days ago</span></a></li>
+                                                <li><a href="extra-user-list.html" target="_blank"><span class="label label-pink"><i class="fa fa-envelope"></i></span>Message Sent<span class="pull-right text-muted small">5 days ago</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="last"><a href="extra-user-list.html" class="text-right">See all alerts</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-envelope fa-fw"></i><span class="badge badge-orange">7</span></a><ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <p>You have 14 new messages</p>
+                                </li>
+                                <li>
+                                    <div class="dropdown-slimscroll">
+                                        <ul>
+                                            <li><a href="email-view-mail.html" target="_blank"><span class="avatar">
+                                                <img src="../../../s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt="" class="img-responsive img-circle" /></span><span class="info"><span class="name">Jessica Spencer</span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a></li>
+                                            <li><a href="email-view-mail.html" target="_blank"><span class="avatar">
+                                                <img src="../../../s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt="" class="img-responsive img-circle" /></span><span class="info"><span class="name">John Smith<span class="label label-blue pull-right">New</span></span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a></li>
+                                            <li><a href="email-view-mail.html" target="_blank"><span class="avatar">
+                                                <img src="../../../s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt="" class="img-responsive img-circle" /></span><span class="info"><span class="name">John Doe<span class="label label-orange pull-right">10 min</span></span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a></li>
+                                            <li><a href="email-view-mail.html" target="_blank"><span class="avatar">
+                                                <img src="../../../s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt="" class="img-responsive img-circle" /></span><span class="info"><span class="name">John Smith</span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a></li>
+                                            <li><a href="email-view-mail.html" target="_blank"><span class="avatar">
+                                                <img src="../../../s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt="" class="img-responsive img-circle" /></span><span class="info"><span class="name">John Smith</span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="last"><a href="email-view-mail.html" target="_blank">Read all messages</a></li>
+                            </ul>
+                            </li>
+                            <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-tasks fa-fw"></i><span class="badge badge-yellow">8</span></a><ul class="dropdown-menu dropdown-tasks">
+                                <li>
+                                    <p>You have 14 pending tasks</p>
+                                </li>
+                                <li>
+                                    <div class="dropdown-slimscroll">
+                                        <ul>
+                                            <li><a href="page-blog-item.html" target="_blank"><span class="task-item">Fix the HTML code<small class="pull-right text-muted">40%</small></span><div class="progress progress-sm">
+                                                <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;" class="progress-bar progress-bar-orange"><span class="sr-only">40% Complete (success)</span></div>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="page-blog-item.html" target="_blank"><span class="task-item">Make a wordpress theme<small class="pull-right text-muted">60%</small></span><div class="progress progress-sm">
+                                                <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar progress-bar-blue"><span class="sr-only">60% Complete (success)</span></div>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="page-blog-item.html" target="_blank"><span class="task-item">Convert PSD to HTML<small class="pull-right text-muted">55%</small></span><div class="progress progress-sm">
+                                                <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;" class="progress-bar progress-bar-green"><span class="sr-only">55% Complete (success)</span></div>
+                                            </div>
+                                            </a></li>
+                                            <li><a href="page-blog-item.html" target="_blank"><span class="task-item">Convert HTML to Wordpress<small class="pull-right text-muted">78%</small></span><div class="progress progress-sm">
+                                                <div role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;" class="progress-bar progress-bar-yellow"><span class="sr-only">78% Complete (success)</span></div>
+                                            </div>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="last"><a href="page-blog-item.html" target="_blank">See all tasks</a></li>
+                            </ul>
+                            </li>--%>
+                            <li class="dropdown topbar-user">
+                                <a data-hover="dropdown" href="#" class="dropdown-toggle">
+                                    <img src="../../../s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt="" class="img-responsive img-circle" />&nbsp;
+                                    <span class="hidden-xs">Welcome, </span>
+                                    <asp:Label ID="lblUser" runat="server"></asp:Label>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user pull-right">
+                                    <li><a href="changepassword.aspx"><i class="fa fa-key"></i>Change Password</a></li>
+                                    <li id="li1" runat="server" visible="false"><a href="FileSearch.aspx?p1=3"><i class="fa fa-folder"></i>File(s)<span class="badge badge-danger" id="spanTotalFile" runat="server"></span></a></li>
+                                    <li id="li2" runat="server" visible="false"><a href="LetterSearch.aspx?p1=3"><i class="fa fa-file"></i>Letter(s)<span class="badge badge-success" id="spanTotalLetters" runat="server"></span></a></li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <asp:LinkButton ID="hl_Logout" runat="server" OnClick="lnk_logout_Click" CausesValidation="false">
+										    <i class="fa fa-key"></i>Log Out
+                                        </asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="topbar-chat" class="hidden-xs" style="display: none;"><a href="javascript:void(0)" class="btn-chat"><i class="fa fa-comments"></i><span class="badge badge-info" id="spanDocTotal1" runat="server"></span></a></li>
+                            <li class="dropdown hidden-xs"></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--BEGIN MODAL CONFIG PORTLET-->
+                <div id="modal-config" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button><h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend et nisl eget porta. Curabitur elementum sem molestie nisl varius, eget tempus odio molestie. Nunc vehicula sem arcu, eu pulvinar neque cursus ac. Aliquam ultricies lobortis magna et aliquam. Vestibulum egestas eu urna sed ultricies. Nullam pulvinar dolor vitae quam dictum condimentum. Integer a sodales elit, eu pulvinar leo. Nunc nec aliquam nisi, a mollis neque. Ut vel felis quis tellus hendrerit placerat. Vivamus vel nisl non magna feugiat dignissim sed ut nibh. Nulla elementum, est a pretium hendrerit, arcu risus luctus augue, mattis aliquet orci ligula eget massa. Sed ut ultricies felis.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END MODAL CONFIG PORTLET-->
+            </div>
+            <!--END TOPBAR-->
+            <div id="wrapper">
+                <!--BEGIN SIDEBAR MENU-->
+                <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+                    <div class="sidebar-collapse menu-scroll">
+                        <ul id="side-menu" class="nav">
+                            <li class="user-panel" style="display: none;">&nbsp;
+                            </li>
+                            <asp:Literal ID="ltmenu" runat="server"></asp:Literal>
+                        </ul>
+                    </div>
+                </nav>
+                <!--END SIDEBAR MENU-->
+                <!--BEGIN CHAT FORM-->
+                <div id="chat-form" class="fixed">
+                    <div class="chat-inner">
+                        <h2 class="chat-header">
+                            <a href="javascript:;" class="chat-form-close pull-right"><i class="glyphicon glyphicon-remove"></i></a><i class="fa fa-user"></i>
+                            &nbsp;Letter(s)&nbsp;<span class="badge badge-info" id="spanDocTotal" runat="server">0</span>
+                        </h2>
+                        <div id="divgroup1" runat="server" class="chat-group">
+                            <strong>Pet Breed</strong>
+                            &nbsp;
+                        </div>
+                        <div id="divgroup2" runat="server" class="chat-group">
+                            <strong>Letter Status</strong>
+                            &nbsp;
+                        </div>
+                        <div id="divgroup3" runat="server" class="chat-group">
+                            <strong>Priority</strong>
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <!--END CHAT FORM-->
+                <!--BEGIN PAGE WRAPPER-->
+                <div id="page-wrapper">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!--BEGIN FOOTER-->
+                <div id="footer">
+                    <div class="copyright">2016 © HelpMe</div>
+                </div>
+                <!--END FOOTER-->
+                <!--END PAGE WRAPPER-->
+            </div>
+        </div>
+    </form>
+    <script src="Content/js/jquery-1.10.2.min.js"></script>
+    <script src="Content/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="Content/js/jquery-ui.js"></script>
+    <!--loading bootstrap js-->
+    <script src="Content/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Content/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="Content/js/html5shiv.js"></script>
+    <script src="Content/js/respond.min.js"></script>
+    <script src="Content/vendors/metisMenu/jquery.metisMenu.js"></script>
+    <script src="Content/vendors/slimScroll/jquery.slimscroll.js"></script>
+    <script src="Content/vendors/jquery-cookie/jquery.cookie.js"></script>
+    <script src="Content/vendors/iCheck/icheck.min.js"></script>
+    <script src="Content/vendors/iCheck/custom.min.js"></script>
+    <script src="Content/vendors/jquery-notific8/jquery.notific8.min.js"></script>
+    <script src="Content/vendors/jquery-highcharts/highcharts.js"></script>
+    <script src="Content/js/jquery.menu.js"></script>
+    <script src="Content/vendors/holder/holder.js"></script>
+    <script src="Content/vendors/responsive-tabs/responsive-tabs.js"></script>
+    <script src="Content/vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+    <script src="Content/vendors/moment/moment.js"></script>
+    <script src="Content/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="Content/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!--CORE JAVASCRIPT-->
+    <script src="Content/js/main.js"></script>
+    <!--LOADING SCRIPTS FOR PAGE-->
+    <script src="Content/vendors/intro.js/intro.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.categories.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.pie.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.tooltip.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.resize.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.fillbetween.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.stack.js"></script>
+    <script src="Content/vendors/flot-chart/jquery.flot.spline.js"></script>
+    <script src="Content/vendors/calendar/zabuto_calendar.min.js"></script>
+    <script src="Content/vendors/sco.message/sco.message.js"></script>
+    <script src="Content/vendors/intro.js/intro.js"></script>
+    <script src="Content/js/index.js"></script>
+    <%--<script src="Content/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>--%>
+	
+</body>
+</html>
+

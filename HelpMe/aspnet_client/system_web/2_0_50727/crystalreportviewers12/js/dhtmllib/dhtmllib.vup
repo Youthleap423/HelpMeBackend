@@ -1,0 +1,389 @@
+# Microsoft Utility Project File - Name="dhtmllib" - Package Owner=<4>
+# Microsoft Utility Project Generated Build File, Format Version 70009
+# ** DO NOT EDIT **
+
+# TARGTYPE "Generic External Target" 0x0906
+
+CFG=dhtmllib - Generic Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "dhtmllib.mak".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "dhtmllib.mak" CFG="dhtmllib - Generic Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "dhtmllib - Generic Release" (based on "Generic External Target")
+!MESSAGE "dhtmllib - Generic Debug" (based on "Generic External Target")
+!MESSAGE 
+
+# Begin Project
+# PROP VB_Project 5
+# PROP Scc_ProjName "dhtmllib"
+# PROP Scc_LocalPath "."
+
+!IF  "$(CFG)" == "dhtmllib - Generic Release"
+
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "Release"
+# PROP BASE Intermediate_Dir "Release"
+# PROP BASE Cmd_Line ""
+# PROP BASE Rebuild_Opt ""
+# PROP BASE Target_File "dhtmllib.exe"
+# PROP BASE Bsc_Name "dhtmllib.bsc"
+# PROP BASE Target_Dir ""
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Release"
+# PROP Intermediate_Dir "Release"
+# PROP Cmd_Line "cd ..\dhtmlclient		transfert.bat"
+# PROP Rebuild_Opt ""
+# PROP Target_File "dhtmllib.exe"
+# PROP Bsc_Name "dhtmllib.bsc"
+# PROP Target_Dir ""
+
+!ELSEIF  "$(CFG)" == "dhtmllib - Generic Debug"
+
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "Debug"
+# PROP BASE Intermediate_Dir "Debug"
+# PROP BASE Cmd_Line ""
+# PROP BASE Rebuild_Opt ""
+# PROP BASE Target_File "dhtmllib.exe"
+# PROP BASE Bsc_Name "dhtmllib.bsc"
+# PROP BASE Target_Dir ""
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "Debug"
+# PROP Intermediate_Dir "Debug"
+# PROP Cmd_Line ""
+# PROP Rebuild_Opt ""
+# PROP Target_File "dhtmllib.exe"
+# PROP Bsc_Name "dhtmllib.bsc"
+# PROP Target_Dir ""
+
+!ENDIF 
+
+# Begin Target
+
+# Name "dhtmllib - Generic Release"
+# Name "dhtmllib - Generic Debug"
+
+!IF  "$(CFG)" == "dhtmllib - Generic Release"
+
+!ELSEIF  "$(CFG)" == "dhtmllib - Generic Debug"
+
+!ENDIF 
+
+# Begin Group "images"
+
+# PROP Default_Filter ""
+# Begin Group "skin_coloredline"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\images\skin_coloredline\style.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\images\skin_coloredline\style.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\images\skin_coloredline\style_fe.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Group
+# Begin Group "skin_corporate"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\images\skin_corporate\style.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\images\skin_corporate\style.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\images\skin_corporate\style_fe.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Group
+# Begin Group "skin_default"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\images\skin_default\style.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\images\skin_default\style.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\images\skin_default\style_fe.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\images\print.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\images\print_fe.css
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Group
+# Begin Group "samples"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\samples\andorwidget.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\basicDialog.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\blockWhileWait.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\bolist.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\buttons.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\calendar.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\default.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\fieldswidget.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\framezone.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\grabber.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\inconwidget.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\infowidget.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\lov.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\menu.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\palettes.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\parent_dialog.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\progressBar.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\prompttree.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\scrolltabs.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\tabs.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\treeview.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\samples\waitDialog.html
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Group
+# Begin Group "language"
+
+# PROP Default_Filter ""
+# Begin Group "dev"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\language\dev\labels.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Group
+# End Group
+# Begin Group "devxml"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\devxml\libDhtml.bodevxml
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\bolist.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\calendar.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\dialog.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\dom.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\lov.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\menu.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\palette.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\prompttree.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\psheet.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\treeview.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\waitdialog.js
+# PROP BASE Deployment_Mode 1
+# PROP Deployment_Mode 1
+# End Source File
+# End Target
+# End Project

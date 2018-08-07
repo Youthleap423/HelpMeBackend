@@ -1,0 +1,5 @@
+SCC = This is a source code control file
+
+[dhtmllib.csproj]
+SCC_Aux_Path = "P4SCC#perforceproxy2.product.businessobjects.com:1971##fdewitte#5F4DCC3B5AA765D61D8327DEB882CF99#fdewitte-medford"
+SCC_Project_Name = Perforce Project

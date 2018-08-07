@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteLinks.master.cs" Inherits="RentTrack.Admin.SiteLinks" %>
+
+<!DOCTYPE html />
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<html lang="en">
+<head id="Head1" runat="server">
+    <title>Rent Track Management</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" href="Content/img/favicon.ico" />
+    <link href="Content/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="Content/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="Content/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="Content/css/Righteous.css" rel="stylesheet" type="text/css" />
+    <link href="Content/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href="Content/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="Content/plugins/xcharts/xcharts.min.css" rel="stylesheet" />
+    <link href="Content/plugins/select2/select2.css" rel="stylesheet" />
+    <link href="Content/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+		<script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
+		<script src="http://getbootstrap.com/docs-assets/js/respond.min.js"></script>
+	<![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </cc1:ToolkitScriptManager>
+        <header class="navbar">
+            <div class="container-fluid expanded-panel">
+                <div class="row">
+                    <div id="logo" class="col-xs-12 col-sm-2">
+                        <a href="Dashboard.aspx">RentTrack</a>
+                    </div>
+                    <div id="top-panel" class="col-xs-12 col-sm-10">
+                        <div class="row">
+                            <div class="col-xs-8 col-sm-4" style="padding-top: 10px;">
+                                <a href="#" class="show-sidebar" style="padding-top: 10px;">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <div id="search" style="display: none;">
+                                    <asp:TextBox ID="txtSearch" runat="server" CssClass="search"></asp:TextBox>
+                                    <i class="fa fa-search" style="top: 8px;"></i>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-8 top-panel-right">
+                                <ul class="nav navbar-nav pull-right panel-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle account" data-toggle="dropdown">
+                                            <div class="avatar">
+                                                <img src="Content/img/avatar.jpg" class="img-rounded" alt="avatar" />
+                                            </div>
+                                            <i class="fa fa-angle-down pull-right"></i>
+                                            <div class="user-mini pull-right">
+                                                <span class="welcome">Welcome,</span>
+                                                <asp:Label ID="lblUser" runat="server"></asp:Label>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="changepassword.aspx" class="modal-link">
+                                                    <i class="fa fa-user"></i>
+                                                    <span>Change Password</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton ID="hl_Logout" runat="server" OnClick="lnk_logout_Click">
+											        <i class="fa fa-power-off"></i>
+											        <span>Logout</span>
+                                                </asp:LinkButton>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main" class="container-fluid">
+            <div class="row">
+                <div id="sidebar-left" class="col-xs-2 col-sm-2">
+                    <ul class="nav main-menu">
+                        <li><a href="Dashboard.aspx" class="active"><i class="fa fa-dashboard"></i><span class="hidden-xs">Dashboard</span> </a></li>
+                        <li class="dropdown"><a id="aAdministration" runat="server" href="#" class="dropdown-toggle">
+                            <i class="fa fa-table"></i><span class="hidden-xs">Administration</span> </a>
+                            <ul class="dropdown-menu" id="ulAdministrationMenu" runat="server">
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content" class="col-xs-12 col-sm-10">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="Content/plugins/jquery/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="Content/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="Content/plugins/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Content/plugins/justified-gallery/jquery.justifiedgallery.min.js" type="text/javascript"></script>
+    <script src="Content/plugins/tinymce/tinymce.min.js" type="text/javascript"></script>
+    <script src="Content/plugins/tinymce/jquery.tinymce.min.js" type="text/javascript"></script>
+    <script src="Content/js/devoops.js" type="text/javascript"></script>
+    <script src="Content/js/nav.js" type="text/javascript"></script>
+    <script src="Content/js/date.format.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Create Wysiwig editor for textare
+            TinyMCEStart('#wysiwig_simple', null);
+            TinyMCEStart('#wysiwig_full', 'extreme');
+            // Add slider for change test input length
+            FormLayoutExampleInputLength($(".slider-style"));
+            // Initialize datepicker
+            //$('#input_date').datepicker({ setDate: new Date() });
+            // Load Timepicker plugin
+            //LoadTimePickerScript(DemoTimePicker);
+            // Add tooltip to form-controls
+            $('.form-control').tooltip();
+            //LoadSelect2Script(DemoSelect2);
+            // Load example of form validation
+            //LoadBootstrapValidatorScript(DemoFormValidator);
+            // Add drag-n-drop feature to boxes
+            WinMove();
+        });
+    </script>
+</body>
+</html>

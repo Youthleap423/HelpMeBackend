@@ -1,0 +1,809 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{397AA4E7-ECC9-4156-89AE-88AA62FFC6B7}"
+        SccProjectName = "Perforce Project"
+        SccLocalPath = ".."
+        SccProvider = "MSSCCI:Perforce SCM"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "dhtmllib"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = "cd $(ProjectDir)/../dhtmlclient&#xd;&#xa; ant"
+                PostBuildEvent = ""
+                RootNamespace = "dhtmllib"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References/>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "bolist.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "calendar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "dialog.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "dom.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "empty.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "lov.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "menu.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "palette.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "prompttree.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "psheet.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "treeview.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "waitdialog.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "devxml\libDhtml.bodevxml"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "devxml\libDhtml.bolocxml"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "images\help.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\lov.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\print.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\print_fe.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\prompt.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\resizepattern.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\swap.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\transp.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\tree.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\bolist.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\button.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\buttonIcons.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\critical_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\dialogelements.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\dialogframe.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\dialogframeleftright.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\dialogframetopbottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\dialogtitle.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\iconsep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\information_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\menus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\node.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\progress.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\resize.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\scroll_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\sep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\sep_solid.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\style.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\style_fe.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\tabs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\up.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\wait01.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\wait02.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_coloredline\warning_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\bolist.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\button.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\buttonIcons.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\critical_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\dialogelements.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\dialogframe.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\dialogframeleftright.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\dialogframetopbottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\dialogtitle.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\iconsep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\information_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\menus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\node.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\progress.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\resize.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\scroll_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\sep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\sep_solid.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\style.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\style_fe.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\tabs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\up.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\wait01.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\wait02.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_corporate\warning_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\bolist.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\button.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\buttonIcons.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\critical_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\dialogelements.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\dialogframe.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\dialogframeleftright.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\dialogframetopbottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\dialogtitle.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\iconsep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\information_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\menus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\node.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\progress.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\resize.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\scroll_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\sep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\sep_solid.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\style.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\style_fe.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\tabs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\up.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\wait01.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\wait02.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_default\warning_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\bolist.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\button.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\buttonIcons.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\critical_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\dialogelements.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\dialogframe.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\dialogframeleftright.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\dialogframetopbottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\dialogtitle.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\iconsep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\information_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\menus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\node.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\progress.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\resize.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\scroll_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\sep.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\sep_solid.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\style.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\style_fe.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\tabs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\up.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\wait01.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\wait02.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\skin_standard\warning_icon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "language\dev\labels.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\andorwidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\basicDialog.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\blockWhileWait.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\bolist.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\borderswidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\buttons.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\calendar.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\default.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\dim.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\dim_close.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\dim_o.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\dim_open.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\fieldswidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\format.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\framezone.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\grabber.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\iconlistpopupwidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\iconscrollmenuwidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\imgtabs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\inconwidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\infowidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\lov.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\measure.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\measure_o.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\menu.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\navigation.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\palettes.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\parent_dialog.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\progressBar.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\prompttree.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\qualif.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\scrolltabs.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\tabs.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\textcombowidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\tooltipwidget.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\treeicons.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\treeview.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\unv_close.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\unv_o.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\unv_open.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "samples\waitDialog.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "validator\default.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "validator\validator_res.html"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

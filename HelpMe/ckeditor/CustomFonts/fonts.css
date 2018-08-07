@@ -1,0 +1,11 @@
+﻿@font-face {  
+   font-family: "LMG-Arun";  
+   src: url(/ckeditor/CustomFonts/LMG-Arun.eot); /* IE */  
+   src: local("LMG-Arun"), url("/ckeditor/CustomFonts/LMG-Arun.ttf") format("truetype"); /*non-IE*/  
+}
+
+@font-face {  
+   font-family: "LMG-Rupen";  
+   src: url(/ckeditor/CustomFonts/LMG-Rupen.eot); /* IE */  
+   src: local("LMG-Rupen"), url("/ckeditor/CustomFonts/LMG-Rupen.ttf") format("truetype"); /*non-IE*/  
+}
